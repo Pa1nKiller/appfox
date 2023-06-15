@@ -1,0 +1,181 @@
+.nearestAndSoon {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 1.5rem;
+        row-gap: 1.5rem;
+        @media (max-width: 70rem) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__mainTitle {
+    }
+
+    &__switcher {
+    }
+}
+
+.mainTitle {
+    height: 33.75rem;
+    width: 53.5rem;
+    background: url(/src/img/firstBlock/since.png) no-repeat;
+    border-radius: 0.625rem;
+    display: flex;
+    align-items: end;
+
+    @media (max-width: 70rem) {
+        height: 30rem;
+    }
+    @media (max-width: 54.9375rem) {
+        width: 100%;
+    }
+
+    &__items {
+        @include adaptivValue('margin-bottom', 45, 15, 0);
+        @include adaptivValue('margin-left', 60, 20, 0);
+    }
+
+    &__button {
+        cursor: pointer;
+        //@include adaptivValue('', 30, 6, 0);
+        
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.125rem;
+        line-height: 150%;
+        letter-spacing: 0.1em;
+
+        padding: 0.625rem 1.25rem 0.4375rem;
+        background-color: #ffffff;
+        border-radius: 0.3125rem;
+
+        color: #210e09;
+        text-transform: uppercase;
+
+        transition: all 0.2s;
+        &:hover {
+            transition: all 0.2s;
+            background-color: rgb(77, 51, 36);
+            color: #ffffff;
+        }
+    }
+
+    &__title {
+        font-weight: 400;
+        color: #fff;
+        font-size: 2.5rem;
+        line-height: 150%;
+    }
+}
+.switcher {
+    max-height: 33.75rem;
+    height: 100%;
+    max-width: 26rem;
+    border-radius: 0rem 0rem 0.3125rem 0.3125rem;
+
+
+
+    @media (max-width: 70rem) {
+        max-width: 100%;
+    }
+
+    &__buttons {
+        display: flex;
+    }
+
+    &__button {
+        font-weight: 700;
+        font-style: normal;
+
+        font-size: 0.875rem;
+        line-height: 150%;
+        flex: 0 1 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.4375rem 0.625rem;
+        letter-spacing: 0.1em;
+        background: rgba(213, 98, 29, 0.05);
+        border-radius: 0.3125rem 0.3125rem 0rem 0rem;
+        color: #fff;
+        text-transform: uppercase;
+        transition: background-color 0.2s;
+        &:hover {
+            transition: background-color 0.2s;
+            background: rgba(213, 98, 29, 0.03);
+        }
+        &.active {
+            background: rgba(213, 98, 29, 0.1);
+        }
+    }
+    &__body {
+        background: rgba(213, 98, 29, 0.1);
+        margin: 0 auto;
+        border-radius: 0rem 0rem 0.3125rem 0.3125rem;
+        height: 100%;
+    }
+
+    &__block {
+        column-gap: 1.625rem;
+        row-gap: 1.625rem;
+        padding: 2.4375rem 1rem;  
+
+        justify-content: center;
+        align-items: center;
+
+        overflow: auto;
+        @media (max-width: 70rem) {
+            overflow-x: auto;
+            @include adaptivValue('padding-top', 39, 12, 0);
+            @include adaptivValue('padding-bottom', 39, 12, 0);
+            @include adaptivValue('padding-left', 16, 8, 0);
+            @include adaptivValue('padding-right', 16, 8, 0);
+        }
+
+        > img {
+            transition: transform 0.35s;
+            cursor: pointer;
+            &:hover {
+                transform: scale(1.10);
+            }
+        }
+    }
+}
+.nearest {
+    display: none;
+    align-items: center;
+    flex-wrap: wrap;
+    &.active {
+        display: flex;
+        @media (max-width: 70rem) {
+            display: none;
+        }
+    }
+    @media (max-width: 70rem) {
+        display: block;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+    }
+
+}
+.soon {
+    display: none;
+    align-items: center;
+    flex-wrap: wrap;
+    &.active {
+        display: flex;
+        @media (max-width: 70rem) {
+            display: none;
+        }
+    }
+    @media (max-width: 70rem) {
+        display: block;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+    }
+   
+}
+
+/*==============================================================================================*/

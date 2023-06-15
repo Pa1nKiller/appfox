@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preload" href="./css/style.css" as="style" />
+    <link rel="preload" href="./js/switcher.js" as="script" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--  <script src="js/jquery-3.6.3.js" ></script> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <!--<div id="preloader">
+        <img src="./img/loader.gif" alt="preloader">
+    </div>-->
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__body">
+                    <a href="#" class="header__logo"><img src="./img/logo.svg" alt="img"></a>
+                    <nav class="header__menu menu">
+                        <ul class="menu__list">
+                            <li>
+                                <a data-goto=".nearestAndSoon" class="menu__link menu-effect-link" href="#">
+                                    Главная
+                                </a>
+                            </li>
+                            <li>
+                                <a data-goto=".kitchen" class="menu__link menu-effect-link" href="#">
+                                    Меню
+                                </a>
+                            </li>
+                            <li>
+                                <a class="menu__link menu-effect-link" href="#">
+                                    Афиша
+                                </a>
+                            </li>
+                            <li>
+                                <a class="menu__link effect" href="#">
+                                    Сотрудничество
+                                </a>
+                            </li>
+                            <li>
+                                <a class="menu__link menu-effect-link" href="#">
+                                    Галерея
+                                </a>
+                            </li>
+                            <li>
+                                <a class="menu__link menu-effect-link" href="#">
+                                    Новости
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="header__button" type="button">бронирование</button>
+                    <button class="menu__icon icon-menu" type="button">
+                        <span class="icon-menu__line"></span>
+                    </button>
+                </div>
+            </div>  
+        </header>
+
+        <main class="main">
+            <section class="nearestAndSoon">
+                <div class="nearestAndSoon__container">
+                    <div class="nearestAndSoon__mainTitle mainTitle">
+                        <div class="mainTitle__items">
+                            <button class="mainTitle__button">
+                                Since 1996
+                            </button>
+                            <h1 class="mainTitle__title">
+                                True. Fontanka.<br>Underground.
+                            </h1>
+                        </div>
+                    </div>
+
+                    <div class="nearestAndSoon__switcher switcher">
+                        <nav class="switcher__buttons">
+                            <button id="nearest" class="switcher__button active">Ближайшие</button>
+                            <button id="soon" class="switcher__button">Скоро</button>
+                        </nav>
+                        <div class="switcher__body">
+                            <div class="switcher__block nearest active">
+                                <img src="./img/firstBlock/nearest/mnhtn.jpg" alt="image">
+                                <img src="./img/firstBlock/nearest/finalConcert.jpg" alt="image">
+                                <img src="./img/firstBlock/nearest/fontanka.jpg" alt="image">
+                                <img src="./img/firstBlock/nearest/mnhtnDark.jpg" alt="image">
+                            </div>
+                            <div class="switcher__block soon">
+                                <img src="./img/firstBlock/soon/finalConcert.jpg" alt="image">
+                                <img src="./img/firstBlock/soon/mnhtn.jpg" alt="image">
+                                <img src="./img/firstBlock/soon/mnhtnDark.jpg" alt="image">
+                                <img src="./img/firstBlock/soon/fontanka.jpg" alt="image">
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+
+            </section>
+            
+            <section class="kitchen">
+                <div class="kitchen__container">
+                    <div class="kitchen__toptitle">
+                        <h2>Top “Manhattan” menu</h2>
+                    </div>
+                    <div class="kitchen__bottomtitle">
+                        Кухня
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            footer
+        </footer>
+    </div>
+
+    <script src="./js/menu.js"></script>
+    <script src="./js/switcher.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script>
+        let loader = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+            setTimeout(() => {
+                loader.style.display = "none";
+            }, 500);
+        })
+    </script>
+</body>
+
+</html>

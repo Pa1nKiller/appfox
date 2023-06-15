@@ -1,0 +1,9 @@
+@function rem($value) {
+    $rem: ($value / 16);
+    @return $rem + rem;
+}
+
+@function per($value) {
+    $rem: ($value / $maxWidth) * 100%;
+    @return $rem;
+}

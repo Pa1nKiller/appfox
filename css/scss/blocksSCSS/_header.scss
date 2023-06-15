@@ -1,0 +1,198 @@
+a,
+a > span {
+  position: relative;
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    transition: transform 0.42s ease;
+  }
+}
+
+.icon-menu {
+  display: none;
+  &__line {
+  }
+}
+
+@media (max-width: 49.8125rem) {
+  .icon-menu {
+    display: block;
+    position: relative;
+
+    z-index: 5;
+    width: 1.875rem;
+    height: 1.125rem;
+
+    background-color: transparent;
+
+    &__line,
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #fff;
+      height: 0.125rem;
+      width: 100%;
+      left: 0;
+      transition: 0.3s;
+    }
+    &::before {
+      top: 0;
+    }
+    &::after {
+      bottom: 0;
+    }
+    &__line {
+      top: calc(50% - 0.0625rem);
+    }
+  }
+
+  .menu-open{
+    .menu{
+      left: 0;
+    }
+
+    .icon-menu::before{
+      top: calc(50% - 0.0625rem);
+      transform: rotate(-45deg);
+    }
+    .icon-menu::after{
+      top: calc(50% - 0.0625rem);
+      transform: rotate(45deg);
+    }
+    .icon-menu__line{
+      left: 50%;
+      width: 0;
+    }
+    .header__logo{
+      display: inline-block;
+    }
+    .header__button{
+      display: none;
+    }
+    .header::before{
+      content: "";
+      position: fixed;
+      width: 100%;
+      height: 4rem;
+      left: 0;
+      top: 0;
+      background-color: #210E09;
+      z-index: 2;
+    }
+
+  }
+}
+
+.header {
+  position: fixed;
+  background-color: #210E09;
+  &__container {
+  }
+  &__body {
+    
+    @include adaptivValue("margin-top", 30, 16, 0);
+    @include adaptivValue("margin-bottom", 30, 16, 0);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+    @media (max-width: 27.4375rem) {
+      display: none;
+    }
+  }
+
+  &__button {
+    font-weight: 400;
+    cursor: pointer;
+    color: #fff;
+    box-sizing: border-box;
+
+    @include adaptivValue("padding-top", 15, 10, 0);
+    @include adaptivValue("padding-bottom", 15, 10, 0);
+    @include adaptivValue("padding-right", 30, 15, 0);
+    @include adaptivValue("padding-left", 30, 15, 0);
+
+    border: 0.125rem solid #d5621d;
+    background-color: transparent;
+    border-radius: 0.3125rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+    transition: background-color 0.2s;
+    &:hover {
+      transition: background-color 0.2s;
+      background-color: #d5631d48;
+    }
+  }
+}
+
+.menu-open{
+  body{
+    overflow: hidden;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+    @include adaptivValue('column-gap', 30, 8, 0);
+    row-gap: 0.625rem;
+    flex-wrap: wrap;
+  }
+
+  &__link {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.875rem;
+    line-height: 150%;
+    color: #fff;
+    letter-spacing: 0.1em;
+    padding: 0.3125rem 0.625rem;
+    &:before {
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 0.125rem;
+      background: #d5621d;
+      transform: scaleX(0);
+    }
+    &:hover:before {
+      transform: scaleX(1);
+    }
+  }
+
+  @media (max-width: 49.8125rem) {
+    overflow: auto;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    transition: left 0.3s;
+    background-color: #210e09;
+
+    display: flex;
+    justify-content: center;
+
+margin-top: 4rem;
+
+    &__list {
+      display: block;
+      &>li{
+        padding: .75rem;
+        text-align: center;
+      }
+    }
+    &__link {
+      font-size: 1.5rem;
+    }
+  }
+}
