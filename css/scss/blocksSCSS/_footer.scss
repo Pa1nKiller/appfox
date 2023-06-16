@@ -1,0 +1,28 @@
+.footer {
+    @include adaptivValue('margin-top', 100, 64, 0);
+    &__container {
+        opacity: 0.5;       
+        
+    }
+
+    &__border{
+        border-top: 1px solid #FFFFFF;
+    }
+
+    &__items {
+        padding: 1.875rem 0;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        flex-wrap: wrap;
+    
+        font-style: normal;
+        font-weight: 400;
+        font-size: .875rem;
+        line-height: 150%;
+                
+        color: #FFFFFF;
+    }
+}

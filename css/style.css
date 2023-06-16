@@ -486,7 +486,7 @@ a > span:after {
 /*==============================================================================================*/
 .kitchen {
   margin-top: calc(
-        32px + 80 * ((100vw - 320px) / 1600)
+        64px + 48 * ((100vw - 320px) / 1600)
       );
 }
 .kitchen__toptitle {
@@ -508,7 +508,7 @@ a > span:after {
 }
 .kitchen__bottomtitle {
   margin-top: calc(
-        24px + 21 * ((100vw - 320px) / 1600)
+        20px + 25 * ((100vw - 320px) / 1600)
       );
   text-align: center;
   font-style: normal;
@@ -518,5 +518,93 @@ a > span:after {
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  color: #ffffff;
+}
+.kitchen__item {
+  max-width: 30.375rem;
+}
+
+/*==============================================================================================*/
+.food {
+  display: flex;
+  align-items: center;
+}
+.food__img {
+  width: 6.875rem;
+  height: 6.875rem;
+}
+.food__description {
+  height: 100%;
+  width: 100%;
+  margin-left: 1.5625rem;
+}
+
+.food-desctiption__title-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.food-desctiption__wt {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 150%;
+  color: #d5621d;
+}
+.food-desctiption__text {
+  margin-top: 0.625rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.title-price__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.title-price__price {
+  padding: 0.375rem 1.25rem;
+  border: 2px solid #d5621d;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer {
+  margin-top: calc(
+        64px + 36 * ((100vw - 320px) / 1600)
+      );
+}
+.footer__container {
+  opacity: 0.5;
+}
+.footer__border {
+  border-top: 1px solid #FFFFFF;
+}
+.footer__items {
+  padding: 1.875rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 150%;
   color: #FFFFFF;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*==============================================================================================*//*# sourceMappingURL=style.css.map */

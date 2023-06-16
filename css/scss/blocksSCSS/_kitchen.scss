@@ -1,5 +1,5 @@
 .kitchen {
-    @include adaptivValue('margin-top', 112, 32, 0);
+    @include adaptivValue("margin-top", 112, 64, 0);
     &__container {
     }
 
@@ -7,12 +7,12 @@
         display: flex;
         justify-content: center;
         & > h2 {
-            padding: .625rem 1.25rem;
+            padding: 0.625rem 1.25rem;
             background: #ffffff;
-            border-radius: .3125rem;
+            border-radius: 0.3125rem;
             font-style: normal;
             font-weight: 700;
-            font-size: .875rem;
+            font-size: 0.875rem;
             line-height: 150%;
 
             text-align: center;
@@ -24,7 +24,7 @@
     }
 
     &__bottomtitle {
-        @include adaptivValue('margin-top', 45, 24, 0);
+        @include adaptivValue("margin-top", 45, 20, 0);
 
         text-align: center;
         font-style: normal;
@@ -36,6 +36,106 @@
         letter-spacing: 0.05em;
         text-transform: uppercase;
 
-        color: #FFFFFF;
+        color: #ffffff;
     }
+
+    &__swiper {
+    }
+
+    &__item { 
+        max-width: 30.375rem;
+
+
+    }
+}
+/*==============================================================================================*/
+.kitchen-swiper {
+}
+.swiper-container {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.food {
+    display: flex;
+    align-items: center;
+    
+    &__img {
+        width: 6.875rem;
+        height: 6.875rem;
+        & > img {
+        }
+    }
+
+    &__description {
+        height: 100%;
+        width: 100%;
+        margin-left: 1.5625rem;
+    }
+}
+.food-desctiption {
+    &__title-price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__wt {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 150%;
+
+        color: #d5621d;
+    }
+
+    &__text {
+        margin-top: 0.625rem;
+
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 150%;
+
+        color: #ffffff;
+    }
+}
+.title-price {
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.125rem;
+        line-height: 150%;
+
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+
+        color: #ffffff;
+    }
+
+    &__price {
+        padding: .375rem 1.25rem;
+        border: 2px solid #d5621d;
+        border-radius: 5px;
+
+        font-style: normal;
+        font-weight: 700;
+        font-size: .875rem;
+        line-height: 150%;
+
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+
+        color: #ffffff;
+    }
+}
+.swiper-pagination {
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}
+.swiper-scrollbar {
 }
