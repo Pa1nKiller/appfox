@@ -184,6 +184,7 @@ a > span:after {
   }
 }
 .header {
+  z-index: 4;
   position: fixed;
   background-color: #210E09;
 }
@@ -520,11 +521,92 @@ a > span:after {
   text-transform: uppercase;
   color: #ffffff;
 }
-.kitchen__item {
+.kitchen-swiper {
+  margin-top: calc(
+        40px + 40 * ((100vw - 320px) / 1600)
+      );
+  overflow: hidden;
+  position: relative;
+}
+.kitchen-swiper__slide {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 3.5rem;
+  -moz-column-gap: 6.25rem;
+       column-gap: 6.25rem;
+  padding: 0 60px 0 60px;
+  row-gap: calc(
+        24px + 32 * ((100vw - 320px) / 1600)
+      );
+  -moz-column-gap: calc(
+        40px + 60 * ((100vw - 320px) / 1600)
+      );
+       column-gap: calc(
+        40px + 60 * ((100vw - 320px) / 1600)
+      );
+}
+@media (max-width: 45.5625rem) {
+  .kitchen-swiper__slide {
+    padding: 0;
+  }
+}
+.kitchen-swiper__item {
   max-width: 30.375rem;
 }
+@media (max-width: 74.9375rem) {
+  .kitchen-swiper__item {
+    flex-direction: column;
+    max-width: 16.25rem;
+  }
+}
+.kitchen-swiper__button-prev {
+  left: 0;
+}
+@media (max-width: 45.5625rem) {
+  .kitchen-swiper__button-prev {
+    left: 30%;
+  }
+}
+.kitchen-swiper__button-next {
+  right: 0;
+}
+@media (max-width: 45.5625rem) {
+  .kitchen-swiper__button-next {
+    right: 30%;
+  }
+}
+.kitchen-swiper__button-general {
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 0.3125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #d5621d;
+  color: #ffffff;
+  font-size: 1.25rem;
+  transition: background-color 0.2s;
+}
+.kitchen-swiper__button-general::after {
+  display: none;
+}
+@media (max-width: 45.5625rem) {
+  .kitchen-swiper__button-general {
+    top: calc(100% - 2rem);
+  }
+}
+.kitchen-swiper__button-general:hover {
+  transition: background-color 0.2s;
+  background-color: #a84203;
+}
+@media (max-width: 45.5625rem) {
+  .kitchen-swiper {
+    padding-bottom: 6rem;
+  }
+}
 
-/*==============================================================================================*/
 .food {
   display: flex;
   align-items: center;
@@ -534,9 +616,12 @@ a > span:after {
   height: 6.875rem;
 }
 .food__description {
-  height: 100%;
-  width: 100%;
   margin-left: 1.5625rem;
+}
+@media (max-width: 74.9375rem) {
+  .food__description {
+    margin: 1rem 0 0 0;
+  }
 }
 
 .food-desctiption__title-price {

@@ -86,6 +86,8 @@ a > span {
 }
 
 .header {
+  z-index: 4;
+
   position: fixed;
   background-color: #210E09;
   &__container {

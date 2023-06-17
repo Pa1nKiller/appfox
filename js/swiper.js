@@ -1,7 +1,8 @@
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.kitchen-swiper', {
     // Optional parameters
-    direction: 'vertical',
     loop: true,
+    simulateTouch: false,
+    autoHeight: true,
 
     // Navigation arrows
     navigation: {
