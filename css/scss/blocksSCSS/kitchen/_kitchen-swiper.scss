@@ -1,0 +1,169 @@
+.kitchen {
+    &__swiper-container{
+        position: relative;
+        padding: 0px 3.75rem 3.75rem 3.75rem;
+        @media (max-width: 45.5625rem) {
+            padding: 0px 0px 3.75rem 0px;
+        }
+    }
+
+    &__swiper {
+       
+    }
+}
+
+
+.kitchen-swiper {
+    @include adaptivValue('margin-top', 80, 40, 0);
+
+    overflow: hidden;
+    position: relative;
+
+    &__wrapper {  
+
+    }
+
+    &__slide {
+        width: 50%;
+        @media (max-width: 27.4375rem) {
+            width: 100%;
+        }
+    }
+
+    &__item { 
+        justify-content: center;
+        @media (max-width: 62.4375rem) {
+            flex-direction: column;
+        }
+    }
+    &__button-prev {
+        left: 0;
+        @media (max-width: 45.5625rem) {
+            left: 30%;
+        }
+    }
+
+    &__button-next {
+        right: 0;
+        @media (max-width: 45.5625rem) {
+            right: 30%;
+        }
+    }
+
+    &__button-general{
+        width: 3.125rem;
+        height: 3.125rem;
+        border-radius: .3125rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        background-color: #d5621d;
+        color: #ffffff;
+
+        font-size: 1.25rem;
+
+        &::after {
+            display: none;
+        }
+
+        @media (max-width: 45.5625rem) {
+            top: calc(100% - 6rem/3);
+        }
+        transition: background-color 0.2s;
+        &:hover{
+            transition: background-color 0.2s;
+            background-color: #a84203;
+        }
+    }
+}
+.swiper-container {
+}
+.swiper-wrapper {
+    
+}
+.swiper-slide {
+}
+.food {
+    display: flex;
+    align-items: center;
+    &__img {
+        width: 6.875rem;
+        height: 6.875rem;
+        & > img {
+        }
+    }
+
+    &__description {
+        margin-left: 1.5625rem;
+        @media (max-width: 62.4375rem) {
+            margin: 1rem 0 0 0;
+        }
+    }
+}
+
+.food-desctiption {
+    &__title-price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__wt {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 150%;
+
+        color: #d5621d;
+    }
+
+    &__text {
+        margin-top: 0.625rem;
+
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 150%;
+
+        color: #ffffff;
+    }
+}
+.title-price {
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.125rem;
+        line-height: 150%;
+
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+
+        color: #ffffff;
+    }
+
+    &__price {
+        padding: .375rem 1.25rem;
+        border: 2px solid #d5621d;
+        border-radius: 5px;
+
+        font-style: normal;
+        font-weight: 700;
+        font-size: .875rem;
+        line-height: 150%;
+
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+
+        color: #ffffff;
+    }
+}
+.swiper-button-prev {
+
+}
+.swiper-button-next {
+
+}

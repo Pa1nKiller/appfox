@@ -1,0 +1,42 @@
+.kitchen {
+    @include adaptivValue("margin-top", 112, 64, 0);
+ 
+    &__container {
+    }
+
+    &__toptitle {
+        display: flex;
+        justify-content: center;
+        & > h2 {
+            padding: 0.625rem 1.25rem;
+            background: #ffffff;
+            border-radius: 0.3125rem;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 0.875rem;
+            line-height: 150%;
+
+            text-align: center;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+
+            color: #210e09;
+        }
+    }
+
+    &__bottomtitle {
+        @include adaptivValue("margin-top", 45, 20, 0);
+
+        text-align: center;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.5rem;
+        line-height: 150%;
+
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+
+        color: #ffffff;
+    }
+}

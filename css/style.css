@@ -485,6 +485,7 @@ a > span:after {
 }
 
 /*==============================================================================================*/
+/*==============================================================================================*/
 .kitchen {
   margin-top: calc(
         64px + 48 * ((100vw - 320px) / 1600)
@@ -521,6 +522,16 @@ a > span:after {
   text-transform: uppercase;
   color: #ffffff;
 }
+
+.kitchen__swiper-container {
+  position: relative;
+  padding: 0px 3.75rem 3.75rem 3.75rem;
+}
+@media (max-width: 45.5625rem) {
+  .kitchen__swiper-container {
+    padding: 0px 0px 3.75rem 0px;
+  }
+}
 .kitchen-swiper {
   margin-top: calc(
         40px + 40 * ((100vw - 320px) / 1600)
@@ -529,35 +540,19 @@ a > span:after {
   position: relative;
 }
 .kitchen-swiper__slide {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  row-gap: 3.5rem;
-  -moz-column-gap: 6.25rem;
-       column-gap: 6.25rem;
-  padding: 0 60px 0 60px;
-  row-gap: calc(
-        24px + 32 * ((100vw - 320px) / 1600)
-      );
-  -moz-column-gap: calc(
-        40px + 60 * ((100vw - 320px) / 1600)
-      );
-       column-gap: calc(
-        40px + 60 * ((100vw - 320px) / 1600)
-      );
+  width: 50%;
 }
-@media (max-width: 45.5625rem) {
+@media (max-width: 27.4375rem) {
   .kitchen-swiper__slide {
-    padding: 0;
+    width: 100%;
   }
 }
 .kitchen-swiper__item {
-  max-width: 30.375rem;
+  justify-content: center;
 }
-@media (max-width: 74.9375rem) {
+@media (max-width: 62.4375rem) {
   .kitchen-swiper__item {
     flex-direction: column;
-    max-width: 16.25rem;
   }
 }
 .kitchen-swiper__button-prev {
@@ -601,11 +596,6 @@ a > span:after {
   transition: background-color 0.2s;
   background-color: #a84203;
 }
-@media (max-width: 45.5625rem) {
-  .kitchen-swiper {
-    padding-bottom: 6rem;
-  }
-}
 
 .food {
   display: flex;
@@ -618,7 +608,7 @@ a > span:after {
 .food__description {
   margin-left: 1.5625rem;
 }
-@media (max-width: 74.9375rem) {
+@media (max-width: 62.4375rem) {
   .food__description {
     margin: 1rem 0 0 0;
   }
@@ -668,6 +658,7 @@ a > span:after {
   color: #ffffff;
 }
 
+/*==============================================================================================*/
 .footer {
   margin-top: calc(
         64px + 36 * ((100vw - 320px) / 1600)
@@ -690,6 +681,4 @@ a > span:after {
   font-size: 0.875rem;
   line-height: 150%;
   color: #FFFFFF;
-}
-
-/*==============================================================================================*//*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
