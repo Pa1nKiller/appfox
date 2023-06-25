@@ -1,7 +1,7 @@
 .kitchen {
     &__swiper-container{
         position: relative;
-        padding: 0px 3.75rem 3.75rem 3.75rem;
+        padding: 0px 3.75rem 0px 3.75rem;
         @media (max-width: 45.5625rem) {
             padding: 0px 0px 3.75rem 0px;
         }
@@ -60,6 +60,8 @@
         align-items: center;
         text-align: center;
 
+        z-index: 1;
+
         background-color: #d5621d;
         color: #ffffff;
 
@@ -72,9 +74,9 @@
         @media (max-width: 45.5625rem) {
             top: calc(100% - 6rem/3);
         }
-        transition: background-color 0.2s;
+        transition: background-color 0.3s;
         &:hover{
-            transition: background-color 0.2s;
+            transition: background-color 0.3s;
             background-color: #a84203;
         }
     }

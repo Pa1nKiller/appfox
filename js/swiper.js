@@ -1,13 +1,13 @@
 const mySwiper = new Swiper('.kitchen-swiper', {
   direction: 'horizontal',
   loop: false,
-
+  speed: 560, 
   slidesPerColumn: 1,
   slidesPerView: 1,
   slidesPerGroup: 1,
-  spaceBetween: 20,
+  spaceBetween: 34,
   grid: {
-    rows: 4,
+    rows: 3,
     fill: 'row',
   },
 
@@ -18,7 +18,7 @@ const mySwiper = new Swiper('.kitchen-swiper', {
       slidesPerGroup: 2,
       spaceBetween: 54,
       grid: {
-        rows: 2,
+        rows: 4,
         fill: 'row',
       },
     },

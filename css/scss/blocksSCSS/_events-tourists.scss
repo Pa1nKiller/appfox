@@ -1,0 +1,69 @@
+.events-tourists {
+    @include adaptivValue("margin-top", 150, 70, 0);
+    &__container {
+        display: flex;
+        justify-content: space-around;
+        @media (max-width: 43.6875rem) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 3rem;
+        }
+    }
+
+    &__events {
+    }
+
+    &__cross {
+        max-width: 28.75rem;
+
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        @include adaptivValue("padding-right", 44, 20, 0);
+        @include adaptivValue("padding-left", 44, 20, 0);
+
+        @media (max-width: 74.9375rem) {
+            max-width: 38.75rem;
+        }
+        @media (max-width: 43.6875rem) {
+           padding: 0;
+        }
+    }
+
+    &__texts {
+        @include adaptivValue("margin-top", 35, 24, 0);
+
+        color: var(--white, #fff);
+        text-align: center;
+
+        font-size: 0.875rem;
+        line-height: 150%;
+        & > p:not(:last-child) {
+            @include adaptivValue("margin-bottom", 30, 18, 0);
+        }
+    }
+
+    &__more-btn {
+        @include adaptivValue("margin-top", 35, 24, 0);
+
+        display: flex;
+        justify-content: center;
+    }
+
+    &__img {
+        @media (max-width: 74.9375rem) {
+            display: none;
+        }
+    }
+
+    &__tourists {
+    }
+}
+.toptitle {
+}
+.bottomtitle {
+}
+.border-btn {
+}
