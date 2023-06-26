@@ -9,6 +9,8 @@
     <link rel="preload" href="./css/style.css" as="style" />
     <link rel="preload" href="./js/switcher.js" as="script" />
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
 
@@ -39,13 +41,13 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="menu__link menu-effect-link" href="#">
-                                    Афиша
+                                <a data-goto=".events-tourists" class="menu__link menu-effect-link" href="#">
+                                    Подробнее
                                 </a>
                             </li>
                             <li>
-                                <a class="menu__link effect" href="#">
-                                    Сотрудничество
+                                <a data-goto=".techrider" class="menu__link effect" href="#">
+                                    Техрайдер
                                 </a>
                             </li>
                             <li>
@@ -542,6 +544,126 @@
                 </div>
             </section>
 
+            <section class="techrider">
+                <div class="techrider__container">
+                    <div class="techrider__toptitle toptitle">
+                        <h2>Top “Manhattan” party</h2>
+                    </div>
+                    <div class="techrider__bottomtitle bottomtitle">
+                        ТЕхрайдер
+                    </div>
+                    <div class="techrider__content">
+                        <div class="techrider__spoilers">
+                            <div class="spoiler one">
+                                <div class="spoiler__item">
+                                    <div class="spoiler__title">
+                                        Loudspeakers
+                                    </div> 
+                                    <div class="spoiler__text">
+                                        <li>Acoustic system BELL Top 600W x 2</li>
+                                        <li>Acoustic system BELL Mid 600W x 2</li>
+                                        <li>Acoustic system BELL Top 600W x 2</li>
+                                        <li>Acoustic system BELL Top 600W x 2</li>
+                                        <li>Acoustic system BELL Top 600W x 2</li>
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="spoiler">
+                                <div class="spoiler__item">
+                                    <div class="spoiler__title">
+                                        Amplifier
+                                    </div> 
+                                    <div class="spoiler__text">
+                                        <li>Acoustic system BELL Top 600W x 2</li>
+                                        <li>Acoustic system BELL Mid 600W x 2</li>
+                                        <li>Acoustic system BELL Top 600W x 2</li>
+                                        <li>Acoustic system BELL Top 600W x 2</li>
+                                        <li>Acoustic system BELL Top 600W x 2</li>
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="spoiler">
+                                <div class="spoiler__item">
+                                    <div class="spoiler__title">
+                                        FOH
+                                    </div> 
+                                    <div class="spoiler__text">
+                                        <li>Acoustic system BELL Top 600W x 2</li>
+                                        <li>Acoustic system BELL Mid 600W x 2</li>
+                                        <li>Acoustic system BELL Top 600W x 2</li>
+                                        <li>Acoustic system BELL Top 600W x 2</li>
+                                        <li>Acoustic system BELL Top 600W x 2</li>
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="spoiler">
+                                <div class="spoiler__item">
+                                    <div class="spoiler__title">
+                                        Backline
+                                    </div> 
+                                    <div class="spoiler__text">
+                                        <li>Acoustic system BELL Top 600W x 2</li>
+                                        <li>Acoustic system BELL Mid 600W x 2</li>
+                                        <li>Acoustic system BELL Top 600W x 2</li>
+                                        <li>Acoustic system BELL Top 600W x 2</li>
+                                        <li>Acoustic system BELL Top 600W x 2</li>
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="spoiler">
+                                <div class="spoiler__item">
+                                    <div class="spoiler__title">
+                                        Microphone set
+                                    </div> 
+                                    <div class="spoiler__text">
+                                        <li>Acoustic system BELL Top 600W x 2</li>
+                                        <li>Acoustic system BELL Mid 600W x 2</li>
+                                        <li>Acoustic system BELL Top 600W x 2</li>
+                                        <li>Acoustic system BELL Top 600W x 2</li>
+                                        <li>Acoustic system BELL Top 600W x 2</li>
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="spoiler">
+                                <div class="spoiler__item">
+                                    <div class="spoiler__title">
+                                        DJ equipment
+                                    </div> 
+                                    <div class="spoiler__text">
+                                        <li>Acoustic system BELL Top 600W x 2</li>
+                                        <li>Acoustic system BELL Mid 600W x 2</li>
+                                        <li>Acoustic system BELL Top 600W x 2</li>
+                                        <li>Acoustic system BELL Top 600W x 2</li>
+                                        <li>Acoustic system BELL Top 600W x 2</li>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="techrider__sound-engineer sound-engineer">
+                            <div class="sound-engineer__title">Звукорежиссеры клуба МАНХЭТТЕН</div>
+                            <div class="sound-engineer__authors">
+                                <div class="sound-engineer__author author">
+                                    <img class="author__img" src="./img/techrider/avaLeft.png" alt="img">
+                                    <div class="author__name">Изотов Константин</div>
+                                    <div class="author__socials socials">
+                                        <a class="socials__vk border-btn"><img src="./img/techrider/vk.svg" alt="img"></a>
+                                        <a class="socials__tg border-btn"><img src="./img/techrider/tg.svg" alt="img"></a>
+                                    </div>
+                                </div>
+                                <div class="sound-engineer__author author">
+                                    <img class="author__img" src="./img/techrider/avaRight.png" alt="img">
+                                    <div class="author__name">Давид Хозиев</div>
+                                    <div class="author__socials socials">
+                                        <a class="socials__vk border-btn"><img src="./img/techrider/vk.svg" alt="img"></a>
+                                        <a class="socials__tg border-btn"><img src="./img/techrider/tg.svg" alt="img"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </main>
 
         <footer class="footer">
@@ -560,6 +682,7 @@
     <script src="./js/switcher.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
+    <script src="./js/spoilers.js"></script>
     <script>
         let loader = document.getElementById("preloader");
         window.addEventListener("load", function () {

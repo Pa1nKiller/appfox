@@ -1,0 +1,67 @@
+//CSS in SCSS
+
+.spoiler {
+    @include adaptivValue("width", 526, 310, 0);
+}
+
+
+.spoiler__item {
+    margin: 0 0 20px 0;
+    width: 100%;
+    background-color: rgba(213, 98, 29, 0.1);
+    border-radius: .3125rem;
+    transition: all .3s;
+}
+.spoiler__item.active {
+    margin: 0 0 20px 0;
+    width: 100%;
+    background-color: #D5621D;
+    transition: all .3s;
+}
+
+.spoiler__title {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    padding: 1.25rem 2.5rem;
+    color: var(--white, #FFF);
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: .0563rem;
+    text-transform: uppercase;
+}
+.spoiler__title::before, 
+.spoiler__title::after {
+    content: '';
+    width: 10px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute; 
+    top: 28px;
+    transition: all .3s;
+}
+.spoiler__title::before{
+    transform: rotate(48deg);
+    right: 40px;
+}
+.spoiler__title::after{
+    transform: rotate(-48deg);
+    right: 46px;
+}
+.spoiler__text {
+    display: none;
+    color: var(--white, #FFF);
+    font-size: 14px;
+    line-height: 150%;
+    padding: .625rem 4.4375rem 1.5625rem 2.5rem;
+}
+
+.spoiler__title.active::before{
+    transform: rotate(-48deg);
+    right: 40px;
+}
+.spoiler__title.active::after{
+    transform: rotate(48deg);
+    right: 46px;
+}

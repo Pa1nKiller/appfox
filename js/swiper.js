@@ -4,7 +4,7 @@ const mySwiper = new Swiper('.kitchen-swiper', {
   speed: 560, 
   slidesPerColumn: 2,
   slidesPerView: 2,
-  slidesPerGroup: 1,
+  slidesPerGroup: 2,
   spaceBetween: 10,
   grid: {
     rows: 2,
@@ -15,7 +15,7 @@ const mySwiper = new Swiper('.kitchen-swiper', {
     360: {
       slidesPerColumn: 2,
       slidesPerView: 2,
-      slidesPerGroup: 1,
+      slidesPerGroup: 2,
       spaceBetween: 20,
       grid: {
         rows: 2,

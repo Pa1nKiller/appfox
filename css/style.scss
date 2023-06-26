@@ -6,6 +6,9 @@
 @import "scss/mixin";
 @import "scss/function";
 
+/*import modules*/
+@import "scss/modules/spoilers";
+
 /*==============================================================================================*/
 @import "scss/preloader";
 @import "scss/body";
@@ -18,5 +21,6 @@
 /*==============================================================================================*/
 
 @import "scss/blocksSCSS/events-tourists";
+@import "scss/blocksSCSS/techrider";
 
 @import "scss/blocksSCSS/footer";

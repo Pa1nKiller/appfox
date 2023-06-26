@@ -1,0 +1,123 @@
+.techrider {
+    @include adaptivValue("margin-top", 150, 70, 0);
+    &__container { 
+
+    }
+
+    &__toptitle {
+    }
+
+    &__bottomtitle {
+    }
+
+    &__content {
+        @include adaptivValue("margin-top", 80, 20, 0);
+
+        display: flex;
+        justify-content: space-around;
+        
+        @media (max-width: 44.3125rem) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__spoilers {
+        @media (max-width: 44.3125rem) {
+            margin-top: 2.5rem;
+        }
+    }
+
+    &__sound-engineer {
+        @media (max-width: 44.3125rem) {
+            margin: 0 auto;
+        }
+    }
+}
+.toptitle {
+}
+.bottomtitle {
+}
+.spoiler {
+    @media (max-width: 44.3125rem) {
+        width: 100%;
+    }
+    &__item {
+    }
+
+    &__title {
+    }
+
+    &__text {
+    }
+}
+
+.sound-engineer {
+    max-width: 27.5rem;
+    padding-left: .9375rem;
+    @media (max-width: 44.3125rem) {
+        padding-left: 0;
+    }
+    &__title {
+        color: var(--white, #FFF);
+        text-align: center;
+        @include adaptivValue("font-size", 32, 28, 0);
+
+
+        line-height: 150%;
+        letter-spacing: .1rem;
+        text-transform: uppercase;
+    }
+
+    &__authors {   
+        @include adaptivValue("margin-top", 50, 30, 0);
+        display: flex;
+        justify-content: center;
+        row-gap: 1.5625rem;
+        column-gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+
+    &__author {
+    }
+}
+.author {
+    text-align: center;
+    &__img {
+    }
+
+    &__name {
+        @include adaptivValue("margin-top", 30, 15, 0);
+        
+        color: var(--white, #FFF);
+        text-align: center;
+
+        font-size: .875rem;
+        font-weight: 700;
+        line-height: 150%;
+        letter-spacing: .0437rem;
+        text-transform: uppercase;
+    }
+
+    &__socials {
+        @include adaptivValue("margin-top", 25, 12, 0);
+        display: flex;
+        justify-content: center;
+    }
+}
+.socials {
+    display: flex;
+    column-gap: 1.5625rem;
+    &__vk {
+        padding: .375rem .5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__tg {
+        padding: .375rem .5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

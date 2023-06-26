@@ -20,7 +20,8 @@
 .mainTitle {
     height: 33.75rem;
     width: 53.5rem;
-    background: url(../../../img/firstBlock/since.png) no-repeat;
+    background: url(./../../../img/firstBlock/since.png);
+    background-repeat: no-repeat;
     border-radius: 0.625rem;
     display: flex;
     align-items: end;
@@ -39,7 +40,6 @@
 
     &__button {
         cursor: pointer;
-        //@include adaptivValue('', 30, 6, 0);
         
         font-weight: 700;
         font-style: normal;
