@@ -1,0 +1,86 @@
+.contacts {
+    @include adaptivValue("margin-top", 150, 70, 0);
+    &__container {
+    }
+
+    &__toptitle {
+    }
+
+    &__bottomtitle {
+    }
+
+    &__info-map {
+        @include adaptivValue("margin-top", 80, 20, 0);
+        display: flex;
+        gap: 1.5rem;
+
+        @media (max-width: 57.4375rem) {
+            flex-direction: column;
+        }
+    }
+}
+.info {
+    max-width: 26rem;
+    border-radius: 5px;
+    border: 2px solid var(--accent, #d5621d);
+    background: rgba(213, 98, 29, 0.1);
+    padding: 3.125rem;
+
+    @include adaptivValue("padding-top", 50, 20, 0);
+    @include adaptivValue("padding-bottom", 50, 20, 0);
+    @include adaptivValue("padding-right", 50, 20, 0);
+    @include adaptivValue("padding-left", 50, 20, 0);
+
+    @media (max-width: 57.4375rem) {
+        max-width: 100%;
+    }
+
+    &__elements {
+    }
+}
+.element {
+    color: var(--white, #fff);
+    line-height: 150%;
+    font-style: normal;
+    &__title {
+        font-size: 1.125rem;
+        font-weight: 700;
+        letter-spacing: 0.0563rem;
+        text-transform: uppercase;
+        &:not(:first-child) {
+            @include adaptivValue("margin-top", 35, 28, 0);
+        }
+    }
+
+    &__text {
+        font-size: 0.875rem;
+        font-weight: 400;
+        @include adaptivValue("margin-top", 20, 18, 0);
+    }
+
+    &__border {
+        width: 100%;
+        height: .0625rem;
+        opacity: 0.5;
+        background: #fff;
+        @include adaptivValue("margin-top", 45, 32, 0);
+        @include adaptivValue("margin-bottom", 45, 32, 0);
+    }
+}
+.map {
+    width: 100%;
+    min-height: 100%;
+    background-color: #fff;
+
+
+
+    &__item {
+        width: 100%;
+        height: 100%;
+        border: 2px solid var(--accent, #d5621d);
+    }
+
+    @media (max-width: 57.4375rem) {
+        height: 41rem;
+    }
+}

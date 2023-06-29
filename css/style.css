@@ -425,12 +425,12 @@ a > span:after {
   border-radius: 0.3125rem;
   color: #210e09;
   text-transform: uppercase;
-  transition: all 0.2s;
+  transition: all 0.3s;
 }
 .mainTitle__button:hover {
-  transition: all 0.2s;
-  background-color: rgb(77, 51, 36);
-  color: #ffffff;
+  transition: all 0.3s;
+  background-color: #a84203;
+  color: #fff;
 }
 .mainTitle__title {
   font-weight: 400;
@@ -959,6 +959,100 @@ a > span:after {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.contacts {
+  margin-top: calc(
+        70px + 80 * ((100vw - 320px) / 1600)
+      );
+}
+.contacts__info-map {
+  margin-top: calc(
+        20px + 60 * ((100vw - 320px) / 1600)
+      );
+  display: flex;
+  gap: 1.5rem;
+}
+@media (max-width: 57.4375rem) {
+  .contacts__info-map {
+    flex-direction: column;
+  }
+}
+
+.info {
+  max-width: 26rem;
+  border-radius: 5px;
+  border: 2px solid var(--accent, #d5621d);
+  background: rgba(213, 98, 29, 0.1);
+  padding: 3.125rem;
+  padding-top: calc(
+        20px + 30 * ((100vw - 320px) / 1600)
+      );
+  padding-bottom: calc(
+        20px + 30 * ((100vw - 320px) / 1600)
+      );
+  padding-right: calc(
+        20px + 30 * ((100vw - 320px) / 1600)
+      );
+  padding-left: calc(
+        20px + 30 * ((100vw - 320px) / 1600)
+      );
+}
+@media (max-width: 57.4375rem) {
+  .info {
+    max-width: 100%;
+  }
+}
+.element {
+  color: var(--white, #fff);
+  line-height: 150%;
+  font-style: normal;
+}
+.element__title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: 0.0563rem;
+  text-transform: uppercase;
+}
+.element__title:not(:first-child) {
+  margin-top: calc(
+        28px + 7 * ((100vw - 320px) / 1600)
+      );
+}
+.element__text {
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-top: calc(
+        18px + 2 * ((100vw - 320px) / 1600)
+      );
+}
+.element__border {
+  width: 100%;
+  height: 0.0625rem;
+  opacity: 0.5;
+  background: #fff;
+  margin-top: calc(
+        32px + 13 * ((100vw - 320px) / 1600)
+      );
+  margin-bottom: calc(
+        32px + 13 * ((100vw - 320px) / 1600)
+      );
+}
+
+.map {
+  width: 100%;
+  min-height: 100%;
+  background-color: #fff;
+}
+.map__item {
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--accent, #d5621d);
+}
+@media (max-width: 57.4375rem) {
+  .map {
+    height: 41rem;
+  }
 }
 
 .footer {

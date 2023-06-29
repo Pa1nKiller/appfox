@@ -19,9 +19,9 @@
 </head>
 
 <body>
-    <div id="preloader">
+<!--     <div id="preloader">
         <img src="./img/loader.gif" alt="preloader">
-    </div>
+    </div> -->
 
     <div class="wrapper">
         <header class="header">
@@ -32,37 +32,32 @@
                         <ul class="menu__list">
                             <li>
                                 <a data-goto=".nearestAndSoon" class="menu__link menu-effect-link" href="#">
-                                    Главная
+                                    Main
                                 </a>
                             </li>
                             <li>
                                 <a data-goto=".kitchen" class="menu__link menu-effect-link" href="#">
-                                    Меню
+                                    Food-menu
                                 </a>
                             </li>
                             <li>
                                 <a data-goto=".events-tourists" class="menu__link menu-effect-link" href="#">
-                                    Подробнее
+                                    About
                                 </a>
                             </li>
                             <li>
                                 <a data-goto=".techrider" class="menu__link effect" href="#">
-                                    Техрайдер
+                                    Techrider
                                 </a>
                             </li>
                             <li>
-                                <a class="menu__link menu-effect-link" href="#">
-                                    Галерея
-                                </a>
-                            </li>
-                            <li>
-                                <a class="menu__link menu-effect-link" href="#">
-                                    Новости
+                                <a data-goto=".contacts" class="menu__link menu-effect-link" href="#">
+                                    Contacts
                                 </a>
                             </li>
                         </ul>
                     </nav>
-                    <button class="header__button border-btn" type="button">бронирование</button>
+                    <button class="header__button border-btn" type="button">reservation</button>
                     <button class="menu__icon icon-menu" type="button">
                         <span class="icon-menu__line"></span>
                     </button>
@@ -86,8 +81,8 @@
 
                     <div class="nearestAndSoon__switcher switcher">
                         <nav class="switcher__buttons">
-                            <button id="nearest" class="switcher__button active">Ближайшие</button>
-                            <button id="soon" class="switcher__button">Скоро</button>
+                            <button id="nearest" class="switcher__button active">Nearest</button>
+                            <button id="soon" class="switcher__button">Soon</button>
                         </nav>
                         <div class="switcher__body">
                             <div class="switcher__block nearest active">
@@ -114,7 +109,7 @@
                         <h2>Top “Manhattan” menu</h2>
                     </div>
                     <div class="kitchen__bottomtitle bottomtitle">
-                        Кухня
+                        kitchen
                     </div>
                     <div class="kitchen__swiper-container">
                         <div class="kitchen__swiper kitchen-swiper swiper-container">
@@ -490,7 +485,7 @@
                     </div>
 
                     <div class="kitchen__all-menu-button">
-                        <button type="button" class="fill-btn">все меню</button>
+                        <button type="button" class="fill-btn">all menu</button>
                     </div>
 
                 </div>
@@ -503,7 +498,7 @@
                             <h2>Top “Manhattan” events</h2>
                         </div>
                         <div class="bottomtitle">
-                            Банкеты
+                            Events
                         </div>
                         <div class="events-tourists__texts">
                             <p>Quam massa pretium et venenatis. Fringilla sagittis, arcu massa, in sem viverra
@@ -516,7 +511,7 @@
                                 pretium diam semper at id eleifend.</p>
                         </div>
                         <div class="events-tourists__more-btn">
-                            <button type="button" class="border-btn">Подробнее</button>
+                            <button type="button" class="border-btn">More</button>
                         </div>
                     </div>
                     <img class="events-tourists__img" src="./img/events&tourists/main.png" alt="img">
@@ -525,7 +520,7 @@
                             <h2>Top “Manhattan” tourists</h2>
                         </div>
                         <div class="bottomtitle">
-                            Туристы
+                            Tourists
                         </div>
                         <div class="events-tourists__texts">
                             <p>Quam massa pretium et venenatis. Fringilla sagittis, arcu massa, in sem viverra
@@ -538,7 +533,7 @@
                                 pretium diam semper at id eleifend.</p>
                         </div>
                         <div class="events-tourists__more-btn">
-                            <button type="button" class="border-btn">Подробнее</button>
+                            <button type="button" class="border-btn">More</button>
                         </div>
                     </div>
                 </div>
@@ -550,7 +545,7 @@
                         <h2>Top “Manhattan” party</h2>
                     </div>
                     <div class="techrider__bottomtitle bottomtitle">
-                        ТЕхрайдер
+                        Techrider
                     </div>
                     <div class="techrider__content">
                         <div class="techrider__spoilers">
@@ -558,107 +553,154 @@
                                 <div class="spoiler__item">
                                     <div class="spoiler__title">
                                         Loudspeakers
-                                    </div> 
+                                    </div>
                                     <div class="spoiler__text">
                                         <li>Acoustic system BELL Top 600W x 2</li>
                                         <li>Acoustic system BELL Mid 600W x 2</li>
                                         <li>Acoustic system BELL Top 600W x 2</li>
                                         <li>Acoustic system BELL Top 600W x 2</li>
                                         <li>Acoustic system BELL Top 600W x 2</li>
-                                    </div>  
+                                    </div>
                                 </div>
                             </div>
                             <div class="spoiler">
                                 <div class="spoiler__item">
                                     <div class="spoiler__title">
                                         Amplifier
-                                    </div> 
+                                    </div>
                                     <div class="spoiler__text">
                                         <li>Acoustic system BELL Top 600W x 2</li>
                                         <li>Acoustic system BELL Mid 600W x 2</li>
                                         <li>Acoustic system BELL Top 600W x 2</li>
                                         <li>Acoustic system BELL Top 600W x 2</li>
                                         <li>Acoustic system BELL Top 600W x 2</li>
-                                    </div>  
+                                    </div>
                                 </div>
                             </div>
                             <div class="spoiler">
                                 <div class="spoiler__item">
                                     <div class="spoiler__title">
                                         FOH
-                                    </div> 
+                                    </div>
                                     <div class="spoiler__text">
                                         <li>Acoustic system BELL Top 600W x 2</li>
                                         <li>Acoustic system BELL Mid 600W x 2</li>
                                         <li>Acoustic system BELL Top 600W x 2</li>
                                         <li>Acoustic system BELL Top 600W x 2</li>
                                         <li>Acoustic system BELL Top 600W x 2</li>
-                                    </div>  
+                                    </div>
                                 </div>
                             </div>
                             <div class="spoiler">
                                 <div class="spoiler__item">
                                     <div class="spoiler__title">
                                         Backline
-                                    </div> 
+                                    </div>
                                     <div class="spoiler__text">
                                         <li>Acoustic system BELL Top 600W x 2</li>
                                         <li>Acoustic system BELL Mid 600W x 2</li>
                                         <li>Acoustic system BELL Top 600W x 2</li>
                                         <li>Acoustic system BELL Top 600W x 2</li>
                                         <li>Acoustic system BELL Top 600W x 2</li>
-                                    </div>  
+                                    </div>
                                 </div>
                             </div>
                             <div class="spoiler">
                                 <div class="spoiler__item">
                                     <div class="spoiler__title">
                                         Microphone set
-                                    </div> 
+                                    </div>
                                     <div class="spoiler__text">
                                         <li>Acoustic system BELL Top 600W x 2</li>
                                         <li>Acoustic system BELL Mid 600W x 2</li>
                                         <li>Acoustic system BELL Top 600W x 2</li>
                                         <li>Acoustic system BELL Top 600W x 2</li>
                                         <li>Acoustic system BELL Top 600W x 2</li>
-                                    </div>  
+                                    </div>
                                 </div>
                             </div>
                             <div class="spoiler">
                                 <div class="spoiler__item">
                                     <div class="spoiler__title">
                                         DJ equipment
-                                    </div> 
+                                    </div>
                                     <div class="spoiler__text">
                                         <li>Acoustic system BELL Top 600W x 2</li>
                                         <li>Acoustic system BELL Mid 600W x 2</li>
                                         <li>Acoustic system BELL Top 600W x 2</li>
                                         <li>Acoustic system BELL Top 600W x 2</li>
                                         <li>Acoustic system BELL Top 600W x 2</li>
-                                    </div>  
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="techrider__sound-engineer sound-engineer">
-                            <div class="sound-engineer__title">Звукорежиссеры клуба МАНХЭТТЕН</div>
+                            <div class="sound-engineer__title">MANHATTAN Club Sound Engineers</div>
                             <div class="sound-engineer__authors">
                                 <div class="sound-engineer__author author">
                                     <img class="author__img" src="./img/techrider/avaLeft.png" alt="img">
-                                    <div class="author__name">Изотов Константин</div>
+                                    <div class="author__name">Izotov Konstantin</div>
                                     <div class="author__socials socials">
-                                        <a class="socials__vk border-btn"><img src="./img/techrider/vk.svg" alt="img"></a>
-                                        <a class="socials__tg border-btn"><img src="./img/techrider/tg.svg" alt="img"></a>
+                                        <a class="socials__vk border-btn"><img src="./img/techrider/vk.svg"
+                                                alt="img"></a>
+                                        <a class="socials__tg border-btn"><img src="./img/techrider/tg.svg"
+                                                alt="img"></a>
                                     </div>
                                 </div>
                                 <div class="sound-engineer__author author">
                                     <img class="author__img" src="./img/techrider/avaRight.png" alt="img">
-                                    <div class="author__name">Давид Хозиев</div>
+                                    <div class="author__name">David Khoziev</div>
                                     <div class="author__socials socials">
-                                        <a class="socials__vk border-btn"><img src="./img/techrider/vk.svg" alt="img"></a>
-                                        <a class="socials__tg border-btn"><img src="./img/techrider/tg.svg" alt="img"></a>
+                                        <a class="socials__vk border-btn"><img src="./img/techrider/vk.svg"
+                                                alt="img"></a>
+                                        <a class="socials__tg border-btn"><img src="./img/techrider/tg.svg"
+                                                alt="img"></a>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contacts">
+                <div class="contacts__container">
+                    <div class="contacts__toptitle toptitle">
+                        <h2>Top “Manhattan” place</h2>
+                    </div>
+                    <div class="contacts__bottomtitle bottomtitle">
+                        contacts
+                    </div>
+                    <div class="contacts__info-map">
+                        <div class="info">
+                            <div class="info__elements element">
+                                <h3 class="element__title">Address</h3>
+                                <p class="element__text">Fontanka River embankment, 90 (entrance in an arch with white columns)
+                                </p>
+                                <h3 class="element__title">telephone</h3>
+                                <p class="element__text">+7 (812) 713-1945</p>
+                                <h3 class="element__title">operating mode</h3>
+                                <p class="element__text">Daily from 12:00 to 06:00</p>
+                                <div class="element__border"></div>
+                                <h3 class="element__title">director</h3>
+                                <p class="element__text">Lydia Emilyevna, +7(921) 963-55-50</p>
+                                <h3 class="element__title">art director</h3>
+                                <p class="element__text">Ilinia Ionashko, +7(981) 989-43-30</p>
+                            </div>
+                        </div>
+                        <div class="map">
+                            <a href="https://yandex.ru/maps/10393/london/?utm_medium=mapframe&utm_source=maps"
+                                style="color:#eee;font-size:12px;position:absolute;top:0px;">London
+                            </a>
+                            <a href="https://yandex.ru/maps/10393/london/?ll=-0.090420%2C51.491708&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoyMjI5NzMwMDkzEhZVbml0ZWQgS2luZ2RvbSwgTG9uZG9uIgoNYcICvhWHB05C&utm_medium=mapframe&utm_source=maps&z=10.85"
+                                style="color:#eee;font-size:12px;position:absolute;top:14px;">London —
+                                Yandex-maps
+                            </a>
+                            <iframe class="map__item"
+                                src="https://yandex.ru/map-widget/v1/?ll=-0.090420%2C51.491708&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoyMjI5NzMwMDkzEhZVbml0ZWQgS2luZ2RvbSwgTG9uZG9uIgoNYcICvhWHB05C&z=10.85"
+                                frameborder="1" allowfullscreen="true"
+                                style="position:relative;">
+                            </iframe>
                         </div>
                     </div>
                 </div>
@@ -670,8 +712,8 @@
             <div class="footer__container">
                 <div class="footer__border">
                     <div class="footer__items">
-                        <p>Copyright © 2022. Все права защищены.</p>
-                        <p>Разработано d-e-n.ru</p>
+                        <p>Copyright © 2022. All rights reserved.</p>
+                        <p>Developed by d-e-n.ru</p>
                     </div>
                 </div>
             </div>
@@ -683,14 +725,14 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
     <script src="./js/spoilers.js"></script>
-    <script>
+<!--     <script>
         let loader = document.getElementById("preloader");
         window.addEventListener("load", function () {
             setTimeout(() => {
                 loader.style.display = "none";
             }, 500);
         })
-    </script>
+    </script> -->
 </body>
 
 </html>

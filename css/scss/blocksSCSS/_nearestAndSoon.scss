@@ -54,11 +54,11 @@
         color: #210e09;
         text-transform: uppercase;
 
-        transition: all 0.2s;
-        &:hover {
-            transition: all 0.2s;
-            background-color: rgb(77, 51, 36);
-            color: #ffffff;
+        transition: all 0.3s;
+        &:hover{
+            transition: all 0.3s;
+            background-color: #a84203;
+            color: #fff;
         }
     }
 
