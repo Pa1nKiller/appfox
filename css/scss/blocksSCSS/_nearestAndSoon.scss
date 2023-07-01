@@ -38,9 +38,7 @@
         @include adaptivValue('margin-left', 60, 20, 0);
     }
 
-    &__button {
-        cursor: pointer;
-        
+    &__button {        
         font-weight: 700;
         font-style: normal;
         font-size: 1.125rem;
@@ -53,13 +51,6 @@
 
         color: #210e09;
         text-transform: uppercase;
-
-        transition: all 0.3s;
-        &:hover{
-            transition: all 0.3s;
-            background-color: #a84203;
-            color: #fff;
-        }
     }
 
     &__title {
@@ -83,11 +74,14 @@
 
     &__buttons {
         display: flex;
+
     }
 
     &__button {
         font-weight: 700;
         font-style: normal;
+
+        cursor: pointer;
 
         font-size: 0.875rem;
         line-height: 150%;

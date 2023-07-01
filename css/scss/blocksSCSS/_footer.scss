@@ -26,3 +26,29 @@
         color: #FFFFFF;
     }
 }
+
+
+.abc {
+    display: flex;
+    gap: .625rem;
+    align-items: center;
+    cursor: pointer;
+    &__gif {
+        background-color: transparent;
+        display: none;
+    }
+    &:hover{
+        color: rgb(142, 85, 11);
+        .abc__png {
+            background-color: transparent;
+            display: none;
+        }
+        .abc__gif {
+            display: inline;
+        }
+
+    }
+    &__png {
+
+    }
+}

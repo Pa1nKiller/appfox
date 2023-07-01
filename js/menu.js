@@ -15,7 +15,13 @@ function documentActions(e){
         const goTo = targetElement.closest('[data-goto]').dataset.goto;
         const goToElement = document.querySelector(goTo);
         const headerHeight = document.querySelector('.header').offsetHeight;
+        const main = document.querySelector('.main');
+        const mainMarginTop = window.getComputedStyle(main, null).getPropertyValue("margin-top");
+
         if (goToElement){
+
+            console.log(goToElement.offsetTop);
+
             window.scrollTo({
                 // - (headerHeight + 15) можно отнять высоту если header fixed, только не правильно она вычисляется
                 top: goToElement.offsetTop - (headerHeight + 15),

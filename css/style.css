@@ -77,6 +77,10 @@ h6 {
   border-radius: 0.3125rem;
   transition: all 0.3s;
 }
+.spoiler__item:hover {
+  transition: background-color 0.3s;
+  background-color: rgba(213, 98, 29, 0.2);
+}
 
 .spoiler__item.active {
   margin: 0 0 20px 0;
@@ -98,6 +102,15 @@ h6 {
   text-transform: uppercase;
 }
 
+.spoiler__title.active {
+  transition: background-color 0.3s;
+  border-radius: 0.3125rem 0.3125rem 0 0;
+}
+.spoiler__title.active:hover {
+  transition: background-color 0.3s;
+  background-color: #a84203;
+}
+
 .spoiler__title::before,
 .spoiler__title::after {
   content: "";
@@ -110,12 +123,12 @@ h6 {
 }
 
 .spoiler__title::before {
-  transform: rotate(48deg);
+  transform: rotate(-48deg);
   right: 40px;
 }
 
 .spoiler__title::after {
-  transform: rotate(-48deg);
+  transform: rotate(48deg);
   right: 46px;
 }
 
@@ -128,12 +141,12 @@ h6 {
 }
 
 .spoiler__title.active::before {
-  transform: rotate(-48deg);
+  transform: rotate(48deg);
   right: 40px;
 }
 
 .spoiler__title.active::after {
-  transform: rotate(48deg);
+  transform: rotate(-48deg);
   right: 46px;
 }
 
@@ -174,7 +187,7 @@ body {
 
 .main {
   margin-top: calc(
-        76px + 64 * ((100vw - 320px) / 1600)
+        40px + 69 * ((100vw - 320px) / 1600)
       );
   flex: 1 1 auto;
 }
@@ -414,7 +427,6 @@ a > span:after {
       );
 }
 .mainTitle__button {
-  cursor: pointer;
   font-weight: 700;
   font-style: normal;
   font-size: 1.125rem;
@@ -425,12 +437,6 @@ a > span:after {
   border-radius: 0.3125rem;
   color: #210e09;
   text-transform: uppercase;
-  transition: all 0.3s;
-}
-.mainTitle__button:hover {
-  transition: all 0.3s;
-  background-color: #a84203;
-  color: #fff;
 }
 .mainTitle__title {
   font-weight: 400;
@@ -456,6 +462,7 @@ a > span:after {
 .switcher__button {
   font-weight: 700;
   font-style: normal;
+  cursor: pointer;
   font-size: 0.875rem;
   line-height: 150%;
   flex: 0 1 50%;
@@ -1077,4 +1084,25 @@ a > span:after {
   font-size: 0.875rem;
   line-height: 150%;
   color: #FFFFFF;
+}
+
+.abc {
+  display: flex;
+  gap: 0.625rem;
+  align-items: center;
+  cursor: pointer;
+}
+.abc__gif {
+  background-color: transparent;
+  display: none;
+}
+.abc:hover {
+  color: rgb(142, 85, 11);
+}
+.abc:hover .abc__png {
+  background-color: transparent;
+  display: none;
+}
+.abc:hover .abc__gif {
+  display: inline;
 }/*# sourceMappingURL=style.css.map */

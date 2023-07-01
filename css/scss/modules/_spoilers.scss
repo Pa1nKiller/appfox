@@ -11,6 +11,11 @@
     background-color: rgba(213, 98, 29, 0.1);
     border-radius: .3125rem;
     transition: all .3s;
+    &:hover{
+        transition: background-color 0.3s;
+        background-color: rgba(213, 98, 29, 0.2);
+    }
+
 }
 .spoiler__item.active {
     margin: 0 0 20px 0;
@@ -31,6 +36,15 @@
     letter-spacing: .0563rem;
     text-transform: uppercase;
 }
+
+.spoiler__title.active{
+    transition: background-color 0.3s;
+    border-radius: .3125rem .3125rem  0 0;
+    &:hover{
+        transition: background-color 0.3s;
+        background-color: #a84203;
+    }
+}
 .spoiler__title::before, 
 .spoiler__title::after {
     content: '';
@@ -42,11 +56,11 @@
     transition: all .3s;
 }
 .spoiler__title::before{
-    transform: rotate(48deg);
+    transform: rotate(-48deg);
     right: 40px;
 }
 .spoiler__title::after{
-    transform: rotate(-48deg);
+    transform: rotate(48deg);
     right: 46px;
 }
 .spoiler__text {
@@ -58,10 +72,10 @@
 }
 
 .spoiler__title.active::before{
-    transform: rotate(-48deg);
+    transform: rotate(48deg);
     right: 40px;
 }
 .spoiler__title.active::after{
-    transform: rotate(48deg);
+    transform: rotate(-48deg);
     right: 46px;
 }
