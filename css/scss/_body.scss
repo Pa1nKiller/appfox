@@ -19,7 +19,7 @@ body{
     width: 100%;
 }
 .main {
-    @include adaptivValue('margin-top', 109, 40, 0);
+    @include adaptivValue('margin-top', 110, 80, 0);
     flex: 1 1 auto;
 }
 .footer {

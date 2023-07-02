@@ -1,5 +1,5 @@
 .footer {
-    @include adaptivValue('margin-top', 100, 64, 0);
+    @include adaptivValue("margin-top", 100, 50, 0);
     &__container {
         opacity: 0.5;       
         

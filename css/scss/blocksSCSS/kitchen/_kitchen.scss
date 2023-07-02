@@ -35,7 +35,7 @@
 }
 
 .kitchen {
-    @include adaptivValue("margin-top", 112, 64, 0);
+    @include adaptivValue("margin-top", 100, 50, 0);
 
     &__container {
     }

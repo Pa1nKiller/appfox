@@ -1,5 +1,5 @@
 .events-tourists {
-    @include adaptivValue("margin-top", 150, 70, 0);
+    @include adaptivValue("margin-top", 100, 50, 0);
     &__container {
         display: flex;
         justify-content: space-around;
