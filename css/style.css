@@ -545,6 +545,12 @@ a > span:after {
 }
 @media (max-width: 70rem) {
   .nearest {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 24.9375rem) {
+  .nearest {
     display: block;
     flex-wrap: nowrap;
     white-space: nowrap;
@@ -565,6 +571,12 @@ a > span:after {
   }
 }
 @media (max-width: 70rem) {
+  .soon {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 24.9375rem) {
   .soon {
     display: block;
     flex-wrap: nowrap;
@@ -1064,7 +1076,7 @@ a > span:after {
 }
 @media (max-width: 57.4375rem) {
   .map {
-    height: 41rem;
+    height: 20rem;
   }
 }
 
